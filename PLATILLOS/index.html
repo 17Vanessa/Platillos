@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<title>Platillos</title>
+</head>
+<body> 
+    <table class="table table-striped table table-hover table table-bordered">
+        <thead>
+        <tr>
+            <th class="table-info">Platillo</th>
+            <th class="table-info">Nombre</th>
+            <th class="table-info">País de Origen</th>
+            <th class="table-info">Receta</th>
+            <th class="table-info">Donde comprar</th>
+            <th class="table-info">Opciones</th>
+        </tr>
+        </thead>
+    
+    <tbody class="table-black-divider">
+        <tr>
+            <td> <figure class="figure">
+                <img src="imagenes/panes con pollo.png" width="300px" class="figure-img img-fluid rounded" alt=".Imagen platillo">
+                <figcaption class="figure-caption"></figcaption>
+              </figure> 
+            </td>
+            <td>Panes con pollo</td>
+            <td>El Salvador <figure class="figure">
+                <img src="" width="52px" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption"></figcaption>
+              </figure> </td>
+            <td> 
+                <span class="badge text-bg-info"><i style="color: aliceblue;" onclick="Panes()">Receta</i></span>
+             </td>
+            <td> 
+                <p>Los talitos</p>
+                <p> Divina Providencia</p>
+                <p> La troncal</p>
+            </td>
+            <td>
+                <p>Panes de gallina</p>
+            </td>
+        </tr>
+        <tr>
+            <td> <figure class="figure">
+                <img src="imagenes/Pupusa-PNG-File.png" width="300px" class="figure-img img-fluid rounded" alt=".Imagen platillo">
+            </td>
+            <td>Pupusas</td>
+            <td>El Salvador <figure class="figure">
+               
+                <figcaption class="figure-caption"></figcaption>
+              </figure> </td>
+            <td>
+                <span class="badge text-bg-info"><i style="color: rgb(255, 255, 255);" onclick="Pupusas()">Receta</i></span>
+            </td>
+            <td>
+                <p>La Sabrosa</p>
+                <p>Tipicos Margoth</p>
+                <p>La fogata del comal</p>
+            </td>
+            <td>
+                <p>Pupusas de chicharron</p>
+                <p>Pupusas de queso</p>
+                <p>Pupusas revueltas</p>
+            </td>
+        </tr>
+        <tr>
+            <td> <figure class="figure">
+                <img src="imagenes/Tamales de elote.png" width="300px" class="figure-img img-fluid rounded" alt=".Imagen de Platillo Ratatouille">
+            </td>
+            <td>Tamales de elote</td>
+            <td>El Salvador <figure class="figure">
+            <td>
+                <span class="badge text-bg-info"><i style="color: aliceblue;" onclick="Tamal()">Receta</i></span>
+            </td>
+            <td> 
+                <p>Los comerciales </p>
+                <p>Tamales cañas</p>
+                <p>Tamaleria Migueleña</p>
+            </td>
+            <td>
+                <p>Tamales de gallina </p>
+                <p> Tamales de azucar </p>
+                <p>Tamales pisquez</p>
+            </td>
+        </tr>
+</tbody>
+</table>
+
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+   function Panes () {
+
+    Swal.fire({
+  title: 'Panes con pollo',
+  html: 
+  'Limpia el pollo y córtalo en partes, cóselo a fuego lento, Lo último es cortar el pan agrega mayonesa en ambos lados, incluye la salsa de pollo, y rellénalo con el pollo y el resto de ingredientes a tu gusto',
+  
+  imageUrl: 'imagenes/descarga.jpg',
+  imageWidth: 300,
+  imageHeight: 200,
+ 
+})
+       
+   }
+</script>
+
+<script>
+    function Pupusas() {
+ 
+     Swal.fire({
+   title: 'Pupusa',
+   html: 
+   'Debes tener un envase con agua y aceite, el cual te ayudará a dar forma a las pupusas, de manera que la masa no se pegue a tus manos. Mientras das forma a la masa, debes ir humedeciendo tus manos en el agua.Una vez que has colocado el relleno, se procede a envolver, dando forma de esférica. Finalmente, vuelves a aplanar y se coloca la pupusa en un comal o plancha bien caliente.',
+   
+   imageUrl: 'imagenes/pupusas 2.png',
+   imageWidth: 300,
+   imageHeight: 200,
+ })
+        
+    }
+ </script>
+
+<script>
+    function Tamal() {
+ 
+     Swal.fire({
+   title: 'Tamal',
+   html: 
+   'Se muelen los granos de elote, idealmente en un molino ya sea industrial o casero a manera que nos quede una masa fina En las hojas de elotes se van echando unas dos cucharadas de masa, se enrollan y se doblan las puntas Tápelos con las hojitas que sobran de los elotes y los deja cocinarse por un hora aproximadamente.',
+   imageUrl: 'imagenes/Tamales 2.jpg',
+   imageWidth: 300,
+   imageHeight: 200,
+ })
+        
+    }
+ </script>
+
+</html>
